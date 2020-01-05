@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Axlebolt - Karambit Gold</title>
+	<link rel='stylesheet' href='css/order.css'>
+</head>
+<body>
+
+	<header>
+		<div id='title'>
+			<img src='img/header.jpg'>
+			<a href='support.html' id='link1'>Поддержка</a>
+			<a href='https://vk.com/public183457911' id='link2'>СоцСети</a>
+			<a href='reviews.html' id='link3'>Отзывы</a>
+		</div>		
+	</header>
+
+	<menu>
+		<div id='menu'>
+			<a href='index.html#gold'>Голда</a>
+			<a href='index.html#jk'>JKommando</a>
+			<a href='index.html#m9'>M9 Bayonet</a>
+			<a href='index.html#b'>Butterfly</a>
+			<a href='index.html#k'>Karambit</a>
+			<a href='index.html#c'>Читы</a>
+		</div>
+	</menu>
+
+	<main>
+		<div id='main'>
+			<div id='product'>
+				<img src='img/kg.png'>
+			</div>
+			<div id='about'>
+				<span>Karambit [Gold]</span></br></br></br>
+
+				<div id='icon'>
+					<div id='order'>
+						<img src='img/done.png'><span>Готовы принять ваш заказ</span>
+					</div>
+
+					<div id='warranty'>
+						<img src='img/warranty.png'><span>Гарантия 100%</span>
+					</div>
+
+					<div id='support'>
+						<img src='img/support.png'><span>Поддержка 24/7</span>
+					</div>								
+				</div>
+
+				<span id='paymants'>Способы оплаты</span>	
+
+				<div id='pay'>
+					<img src='img/qiwi.png'>
+					<img src='img/visa.png'>
+					<img src='img/mastercard.png'>
+					<img src='img/webmoney.png'></br>
+					<img src='img/alpha.png'>
+					<img src='img/apple.png'>
+					<img src='img/mts.png'>
+					<img src='img/megafon.png'>
+				</div>	
+			</div>
+		</div>
+
+		<div id='form'>
+		<div id='title'>
+			<span>Заполнение формы</span>
+		</div>
+
+		<div id='forms'>
+			<input type='text' placeholder='Почта' id='mail'><span>Mail / Gmail / Yandex</span></br>
+			<input type='text' placeholder='Ник' id='name'><span>Ваше имя в игре</span></br>
+			<input type='text' placeholder='ID' id='id'><span>Ваш ID в игре</span></br>
+
+			<button onclick='check()'>Купить</button>
+		</div>
+	</div>
+	</main>
+
+	<footer>
+		<div id='title'>
+			<span id='title'>AXLEBOLT</span>
+			<span id='cr'>© Copyright 2019-2020</span>
+		</div>
+	</footer>
+
+	<script>
+		function check() {
+			var mail = document.getElementById('mail');
+			var name = document.getElementById('name');
+			var id = document.getElementById('id');
+
+			if (mail.value != '' && name.value != '' && id.value != '') {
+				window.open('https://qiwi.me/action/checkout/standgold_1500?sum=499&currency_id=643&source=qw');
+				mail.style.backgroundColor = '#FF8C00';
+				name.style.backgroundColor = '#FF8C00';
+				id.style.backgroundColor = '#FF8C00';
+			}
+
+			else {
+				mail.style.backgroundColor = '#FF0000';
+				name.style.backgroundColor = '#FF0000';
+				id.style.backgroundColor = '#FF0000';
+			}
+		}
+	</script>
+
+</body>
+</html>
